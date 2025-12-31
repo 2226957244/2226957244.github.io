@@ -1,0 +1,58 @@
+// 颜色变量
+$primary-color: #409EFF;          // 主色调
+$success-color: #67C23A;          // 成功色
+$warning-color: #E6A23C;          // 警告色
+$danger-color: #F56C6C;           // 危险色
+$info-color: #909399;             // 信息色
+$white: #FFFFFF;                  // 白色
+
+// 背景色
+$bg-color: #F5F7FA;               // 全局背景色
+$background-light: #F9FAFB;       // 浅色背景
+$card-bg: #FFFFFF;                // 卡片背景色
+$header-bg: #FFFFFF;              // 头部背景色
+
+// 自定义消息颜色
+$user-message-footer: #909399;    // 用户消息底部颜色
+
+// 自定义颜色
+$primary-light: rgba(64, 158, 255, 0.1);   // 主色调浅色
+
+// 文本色
+$text-primary: #303133;           // 主要文本色
+$text-regular: #606266;           // 常规文本色
+$text-secondary: #909399;         // 次要文本色
+$text-placeholder: #C0C4CC;       // 占位文本色
+
+// 边框色
+$border-color: #E4E7ED;           // 边框色
+$border-light: #EBEEF5;           // 浅色边框
+
+// 字体大小
+$font-size-extra-small: 12px;     // 超小字体
+$font-size-small: 14px;           // 小字体
+$font-size-medium: 16px;          // 中字体
+$font-size-large: 18px;           // 大字体
+$font-size-extra-large: 20px;     // 超大字体
+
+// 间距
+$spacing-xs: 4px;                 // 超小间距
+$spacing-sm: 8px;                 // 小间距
+$spacing-md: 16px;                // 中间距
+$spacing-lg: 24px;                // 大间距
+$spacing-xl: 32px;                // 超大间距
+
+// 圆角
+$border-radius-sm: 4px;           // 小圆角
+$border-radius-md: 8px;           // 中圆角
+$border-radius-lg: 12px;          // 大圆角
+
+// 阴影
+$box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);     // 小阴影
+$box-shadow-md: 0 2px 12px rgba(0, 0, 0, 0.1);     // 中阴影
+$box-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.15);    // 大阴影
+
+// 过渡
+$transition-fast: 0.2s ease;      // 快速过渡
+$transition-normal: 0.3s ease;    // 正常过渡
+$transition-slow: 0.5s ease;      // 慢速过渡

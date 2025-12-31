@@ -1,0 +1,169 @@
+// 引入变量文件
+@import './variables.scss';
+
+// 全局重置样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: $font-size-medium;
+  line-height: 1.6;
+  color: $text-primary;
+  background-color: $bg-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 标题样式
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $font-size-extra-large;
+}
+
+h2 {
+  font-size: $font-size-large;
+}
+
+h3 {
+  font-size: $font-size-medium;
+}
+
+// 链接样式
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+    text-decoration: underline;
+  }
+}
+
+// 容器样式
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+// 卡片样式
+.card {
+  background-color: $card-bg;
+  border-radius: $border-radius-md;
+  box-shadow: $box-shadow-sm;
+  padding: $spacing-lg;
+  transition: box-shadow $transition-normal;
+
+  &:hover {
+    box-shadow: $box-shadow-md;
+  }
+}
+
+// 按钮基础样式
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-small;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// 主按钮
+.btn-primary {
+  background-color: $primary-color;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// 辅助按钮
+.btn-secondary {
+  background-color: $info-color;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: darken($info-color, 10%);
+  }
+}
+
+// 成功按钮
+.btn-success {
+  background-color: $success-color;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: darken($success-color, 10%);
+  }
+}
+
+// 危险按钮
+.btn-danger {
+  background-color: $danger-color;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: darken($danger-color, 10%);
+  }
+}
+
+// 警告按钮
+.btn-warning {
+  background-color: $warning-color;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: darken($warning-color, 10%);
+  }
+}
+
+// 文本按钮
+.btn-text {
+  background-color: transparent;
+  color: $text-primary;
+
+  &:hover:not(:disabled) {
+    background-color: $border-light;
+  }
+}
+
+// 响应式断点
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
